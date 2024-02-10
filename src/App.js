@@ -1,9 +1,15 @@
-import './App.css';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
-    <div className='bg-black h-[100vh]'>
-      <h className="text-white">Welcome to Temple of Learning</h>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
