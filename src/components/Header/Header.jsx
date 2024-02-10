@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 const Header = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
-    };
+    // const toggleDropdown = () => {
+    //     setIsDropdownOpen(!isDropdownOpen);
+    // };
 
-    const closeDropdown = () => {
-        setIsDropdownOpen(false);
-    };
+    // const closeDropdown = () => {
+    //     setIsDropdownOpen(false);
+    // };
     return (
         <header className="fixed z-50 top-0 w-full shadow-md">
             <section className="bg-white">
@@ -26,12 +26,12 @@ const Header = () => {
                                 <li className=""><Link
                                     className="   font-bold text-uppercase text-red-600">About</Link></li>
                                 <li className=" "><Link href="#"
-                                        className=" text-uppercase font-bold text-red-600">
-                                        <div >COURSES</div></Link>
+                                    className=" text-uppercase font-bold text-red-600">
+                                    <div >COURSES</div></Link>
 
 
 
-                                    {isDropdownOpen && (
+                                    {/* {isDropdownOpen && (
                                         <div aria-labelledby="absolute" className="dropdown-menu border-0 p-0 m-0 mx-5">
                                             <div className=" ">
                                                 <div className="row bg-white rounded-0 m-0 shadow-sm">
@@ -75,7 +75,7 @@ const Header = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    )}
+                                    )} */}
 
 
                                 </li>
